@@ -39,7 +39,7 @@ avg_connections = total_connections / num_users
 # print(avg_connections)
 
 num_friends_by_id = [(user["id"], number_of_friends(user)) for user in users]
-num_friends_by_id.sort(key=lambda id_and_friends: id_and_friends[1], reverse=True)
+num_friends_by_id.sort(key=lambda id_and_friends: id_and_friends[1], reverse=True) # [Study] lambda
 
 # # Each pair is (user_id, num_friends):
 # # [(1, 3), (2, 3), (3, 3), (5, 3), (8, 3),
