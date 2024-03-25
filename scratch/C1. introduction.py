@@ -41,9 +41,9 @@ avg_connections = total_connections / num_users
 num_friends_by_id = [(user["id"], number_of_friends(user)) for user in users]
 num_friends_by_id.sort(key=lambda id_and_friends: id_and_friends[1], reverse=True) # [Study] lambda
 
-# # Each pair is (user_id, num_friends):
-# # [(1, 3), (2, 3), (3, 3), (5, 3), (8, 3),
-# #  (0, 2), (4, 2), (6, 2), (7, 2), (9, 1)]
+# Each pair is (user_id, num_friends):
+# [(1, 3), (2, 3), (3, 3), (5, 3), (8, 3),
+#  (0, 2), (4, 2), (6, 2), (7, 2), (9, 1)]
 
 
 # assert num_friends_by_id[0][1] == 3     # several people have 3 friends
